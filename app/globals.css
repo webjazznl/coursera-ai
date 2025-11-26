@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-jakarta), "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #0b1224;
+  color: #e5e7eb;
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 20% 20%, rgba(52, 211, 153, 0.15), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(34, 197, 94, 0.12), transparent 25%),
+    linear-gradient(145deg, #0b1224, #0b1328 40%, #0e162f);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  color: #0f172a;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgba(52, 211, 153, 0.7);
+  outline-offset: 2px;
+}
+
+.table-scroll {
+  scrollbar-color: rgba(148, 163, 184, 0.6) transparent;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.7);
+  border-radius: 999px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.badge-soft {
+  background: rgba(52, 211, 153, 0.18);
+  color: #34d399;
+}
